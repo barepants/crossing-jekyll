@@ -1,0 +1,91 @@
+.site-nav.is-toggled {
+  .site-nav-hamburger {
+    display: none;
+  }
+
+  .site-nav-close {
+    display: inline;
+  }
+}
+
+.site-nav-toggle {
+  background-color: transparent;
+  border: 0;
+  margin: -10px -16px;
+  padding: 10px 16px;
+  position: absolute;
+  right: 20px;
+  top: 28px;
+  z-index: 1;
+
+  @include breakpoint {
+    display: none;
+  }
+
+  &:focus {
+    outline: 0;
+  }
+}
+
+.site-nav svg {
+  height: 14px;
+  width: 18px;
+}
+
+.site-nav-close {
+  display: none;
+}
+
+.site-nav-list {
+  border-bottom: 3px solid rgba(#000, .03);
+  display: none;
+  list-style: none;
+  margin: 0 -20px 28px;
+  padding: 0 20px 11px;
+
+  @include breakpoint {
+    border: 0;
+    display: block;
+    margin: -44px 0 28px;
+    padding: 0;
+  }
+
+  li {
+    display: block;
+    padding: 0 0 9px;
+
+    @include breakpoint {
+      float: left;
+      padding: 0;
+    }
+  }
+
+  a {
+    color: #aaa;
+    display: block;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 21px;
+    padding: 6px 0;
+    text-transform: uppercase;
+
+    @include breakpoint {
+      line-height: 20px;
+      margin: 0 20px 0 0;
+      padding: 19px 0;
+    }
+
+    &:hover {
+      color: inherit;
+    }
+  }
+
+  .site-nav.is-toggled & {
+    display: block;
+  }
+}
+
+.site-nav-current a {
+  color: inherit;
+}

@@ -1,0 +1,71 @@
+# Site title
+title: Crossing
+
+# Tagline below the site title on post list pages
+tagline: Thoughts, stories and ideas.
+
+# A description of your site for social meta tag, search engines, and feed.xml
+description:
+
+# The base hostname & protocol of your site for where absolute urls are needed
+url: "https://barepants.github.io"
+
+# The subpath of your site, e.g. /blog, for generating urls
+baseurl: "/crossing-jekyll"
+
+# The site cover image on the home page
+image: /crossing-jekyll/images/site-image.jpg
+
+# The shortname for your Disqus site to enable comments
+disqus_shortname:
+
+# Your Google Analytics tracking code
+google_analytics_tracking_id:
+
+
+# Site navigation
+nav:
+  - title: "Home"
+    url:   "/crossing-jekyll/"
+  - title: "Github"
+    url:   "https://github.com/barepants/crossing-jekyll"
+
+
+# The links in the site footer
+footer_links:
+  - title: "RSS"
+    url:   "/crossing-jekyll/feed.xml"
+  - title: "GitHub"
+    url:   "https://github.com/barepants/crossing-jekyll"
+
+
+# Author information
+authors:
+  johndoe:
+    name: John Doe
+    website: https://github.com/barepants
+    bio: An awesome bio # Author info at bottom of post only shows if bio exists
+    avatar: /crossing-jekyll/images/avatar.jpg
+  lewiscarroll:
+    name: Lewis Carroll
+
+
+# Extra Open Graph and Twitter Cards settings for social sharing
+
+# Fallback og:image when no page.image or site.image. Facebook requires image be
+# at least 200 x 200 pixels.
+og_image:
+
+# twitter:site. Your Twitter username without "@"
+twitter_site:
+
+
+# http://jekyllrb.com/docs/pagination/
+paginate: 5
+paginate_path: page/:num/
+gems: [jekyll-paginate]
+
+permalink: /:title/
+markdown: kramdown
+kramdown:
+  input: GFM

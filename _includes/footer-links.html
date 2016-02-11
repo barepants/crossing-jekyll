@@ -1,0 +1,9 @@
+{% if site.footer_links %}
+  <ul class="x-separated-list">
+    {% for link in site.footer_links %}
+      <li>
+        <a href="{{ link.url }}">{{ link.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+{% endif %}

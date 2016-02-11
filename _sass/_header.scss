@@ -1,0 +1,29 @@
+.site-header {
+  position: relative;
+
+  &:after {
+    background-color: rgba(#000, .03);
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
+  }
+}
+
+.site-title {
+  font-size: inherit;
+  font-weight: bold;
+  margin: 0 34px 0 0;
+
+  @include breakpoint {
+    margin: 0;
+  }
+}
+
+.site-tagline {
+  color: #aaa;
+  font-style: italic;
+}

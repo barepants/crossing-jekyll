@@ -1,0 +1,15 @@
+---
+layout: post
+title:  "The Rabbit Sends in a Little Bill"
+author: lewiscarroll
+---
+
+It was the White Rabbit, trotting slowly back again, and looking anxiously about as it went, as if it had lost something; and she heard it muttering to itself 'The Duchess! The Duchess! Oh my dear paws! Oh my fur and whiskers! She'll get me executed, as sure as ferrets are ferrets! Where can I have dropped them, I wonder?' Alice guessed in a moment that it was looking for the fan and the pair of white kid gloves, and she very good-naturedly began hunting about for them, but they were nowhere to be seen—everything seemed to have changed since her swim in the pool, and the great hall, with the glass table and the little door, had vanished completely.
+
+Very soon the Rabbit noticed Alice, as she went hunting about, and called out to her in an angry tone, 'Why, Mary Ann, what are you doing out here? Run home this moment, and fetch me a pair of gloves and a fan! Quick, now!' And Alice was so much frightened that she ran off at once in the direction it pointed to, without trying to explain the mistake it had made.
+
+'He took me for his housemaid,' she said to herself as she ran. 'How surprised he'll be when he finds out who I am! But I'd better take him his fan and gloves—that is, if I can find them.' As she said this, she came upon a neat little house, on the door of which was a bright brass plate with the name 'W. RABBIT' engraved upon it. She went in without knocking, and hurried upstairs, in great fear lest she should meet the real Mary Ann, and be turned out of the house before she had found the fan and gloves.
+
+'How queer it seems,' Alice said to herself, 'to be going messages for a rabbit! I suppose Dinah'll be sending me on messages next!' And she began fancying the sort of thing that would happen: '"Miss Alice! Come here directly, and get ready for your walk!" "Coming in a minute, nurse! But I've got to see that the mouse doesn't get out." Only I don't think,' Alice went on, 'that they'd let Dinah stop in the house if it began ordering people about like that!'
+
+By this time she had found her way into a tidy little room with a table in the window, and on it (as she had hoped) a fan and two or three pairs of tiny white kid gloves: she took up the fan and a pair of the gloves, and was just going to leave the room, when her eye fell upon a little bottle that stood near the looking-glass. There was no label this time with the words 'DRINK ME,' but nevertheless she uncorked it and put it to her lips. 'I know something interesting is sure to happen,' she said to herself, 'whenever I eat or drink anything; so I'll just see what this bottle does. I do hope it'll make me grow large again, for really I'm quite tired of being such a tiny little thing!'

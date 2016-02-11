@@ -1,0 +1,94 @@
+---
+layout: default
+---
+
+
+{% assign author = site.authors[page.author] %}
+
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    {% if page.image %}
+      <div class="cover-image">
+        <img src="{{ page.image }}" alt="" itemprop="image" />
+      </div>
+    {% endif %}
+    <h1 class="post-title" itemprop="headline">{{ page.title | xml_escape }}</h1>
+    <ul class="x-separated-list x-separated-list-meta">
+      {% if author %}
+        <li class="post-byline">
+          {% if author.website %}
+            <a href="{{ author.website }}">{{ author.name }}</a>
+          {% else %}
+            {{ author.name }}
+          {% endif %}
+        </li>
+      {% endif %}
+      <li class="post-date">
+        <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+          {{ page.date | date: "%B %-d, %Y" }}
+        </time>
+      </li>
+    </ul>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  <div class="share">
+    <span class="share-title">Share this on:</span>
+    {% assign url = page.url | prepend: site.baseurl | prepend: site.url %}
+    <ul class="x-separated-list">
+      <li>
+        <a href="https://twitter.com/intent/tweet?text={{ page.title | uri_escape }}&amp;url={{ url }}"
+            onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">Twitter</a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/sharer/sharer.php?u={{ url }}"
+            onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">Facebook</a>
+      </li>
+      <li>
+        <a href="https://plus.google.com/share?url={{ url }}"
+            onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">Google+</a>
+      </li>
+    </ul>
+  </div>
+
+</article>
+
+{% if author.bio %}
+  <div class="post-author {% if author.avatar %}has-avatar{% endif %}">
+    {% if author.avatar %}
+      {% if author.website %}
+        <a href="{{ author.website }}" class="post-author-avatar" aria-hidden="true" style="background-image: url({{ author.avatar }})"></a>
+      {% else %}
+        <div class="post-author-avatar" style="background-image: url({{ author.avatar }})"></div>
+      {% endif %}
+    {% endif %}
+    <div class="post-author-name">
+      {% if author.website %}
+        <a href="{{ author.website }}">{{ author.name }}</a>
+      {% else %}
+        {{ author.name }}
+      {% endif %}
+    </div>
+    <p class="post-author-bio">{{ author.bio }}</p>
+  </div>
+{% endif %}
+
+{% include disqus.html %}
+
+<nav class="read-next">
+  {% if page.next %}
+    <a class="read-next-newer" href="{{ page.next.url | prepend: site.baseurl }}">
+      <span class="read-next-label">Newer Post</span>
+      <span class="read-next-title">{{ page.next.title | xml_escape }}</span>
+    </a>
+  {% endif %}
+  {% if page.previous %}
+    <a class="read-next-older" href="{{ page.previous.url | prepend: site.baseurl }}">
+      <span class="read-next-label">Older Post</span>
+      <span class="read-next-title">{{ page.previous.title | xml_escape }}</span>
+    </a>
+  {% endif %}
+</nav>

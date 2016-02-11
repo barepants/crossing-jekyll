@@ -1,0 +1,161 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbfbfb;
+  background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0) 150px);
+  background-image: linear-gradient(to bottom, rgba(#fff, .5), rgba(#fff, 0) 150px);
+  background-repeat: no-repeat;
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 28px;
+  margin: 0;
+  padding: 0;
+  text-rendering: optimizeLegibility;
+
+  @include breakpoint {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  transition: border-color .1s, color .1s;
+}
+
+a:hover {
+  color: #000;
+}
+
+p,
+dl,
+dd,
+ul,
+ol,
+blockquote,
+pre,
+table {
+  margin: 0 0 28px;
+
+  @include breakpoint {
+    margin: 0 0 30px;
+  }
+}
+
+dt {
+  font-weight: bold;
+}
+
+ul,
+ol {
+  ul,
+  ol {
+    margin-bottom: 0;
+  }
+}
+
+ul {
+  list-style: disc;
+}
+
+blockquote {
+  font-size: 21px;
+  font-style: italic;
+  padding: 7px 0;
+  text-align: center;
+
+  @include breakpoint {
+    font-size: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+}
+
+pre,
+code {
+  font-family: "DejaVu Sans Mono", Menlo, Consolas, monospace;
+}
+
+code {
+  color: #000;
+}
+
+pre {
+  font-size: 14px;
+  line-height: 21px;
+  padding: 7px 20px;
+  word-break: normal;
+  word-wrap: normal;
+
+  @include breakpoint {
+    font-size: 16px;
+    line-height: 25px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+svg {
+  fill: currentColor;
+}
+
+hr {
+  border: 0;
+  border-bottom: 1px solid #eee;
+  margin: 28px 0;
+
+  @include breakpoint {
+    margin: 30px 0;
+  }
+}
+
+table {
+  border-bottom: 1px solid #eee;
+  border-collapse: collapse;
+  margin-left: -10px;
+  margin-right: -10px;
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  padding: 7px 10px;
+  text-align: left;
+
+  @include breakpoint {
+    padding-bottom: 5px;
+    padding-top: 5px;
+  }
+}
+
+caption {
+  color: #aaa;
+  font-style: italic;
+}
+
+tr {
+  border-top: 1px solid #eee;
+}
+
+main > *:last-child {
+  margin-bottom: 0;
+}

@@ -1,0 +1,28 @@
+.pagination {
+  color: #aaa;
+  font-style: italic;
+
+  svg {
+    color: #333;
+    height: 14px;
+    width: 9px;
+  }
+}
+
+.pagination-newer,
+.pagination-older {
+  color: inherit;
+
+  &:hover {
+    color: #333;
+  }
+}
+
+.pagination-newer {
+  float: left;
+}
+
+.pagination-older {
+  float: right;
+  text-align: right;
+}

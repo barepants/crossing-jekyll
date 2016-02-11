@@ -1,0 +1,35 @@
+.site-footer {
+  background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.05));
+  background-image: linear-gradient(to bottom, rgba(#000, .0), rgba(#000, .05));
+  color: #aaa;
+  font-size: 14px;
+  line-height: 21px;
+  position: relative;
+
+  @include breakpoint {
+    line-height: 25px;
+  }
+
+  &:after {
+    background-color: rgba(#000, .03);
+    bottom: 100%;
+    content: "";
+    height: 3px;
+    left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  a {
+    font-weight: bold;
+  }
+}
+
+.footer-links {
+  color: #ccc;
+  margin-bottom: 7px;
+
+  @include breakpoint {
+    margin-bottom: 5px;
+  }
+}

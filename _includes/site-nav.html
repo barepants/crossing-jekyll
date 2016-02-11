@@ -1,0 +1,23 @@
+{% if site.nav %}
+  <nav class="site-nav">
+    <button class="site-nav-toggle">
+      <span class="screen-reader">Menu</span>
+      <svg class="site-nav-hamburger" viewBox="0 0 18 14">
+        <path d="M0 0h18v2H0zM0 6h18v2H0zM0 12h18v2H0z"/>
+      </svg>
+      <svg class="site-nav-close" viewBox="0 0 18 14">
+        <path d="M16 12.586L3.414 0 2 1.414 14.586 14 16 12.586z"/>
+        <path d="M2 12.586L14.586 0 16 1.414 3.414 14 2 12.586z"/>
+      </svg>
+    </button>
+
+    <ul class="site-nav-list clearfix">
+      {% assign page_url = page.url | prepend: site.baseurl | replace: 'index.html', '' %}
+      {% for link in site.nav %}
+        <li {% if link.url == page_url | prepend: site.baseurl %}class="site-nav-current"{% endif %}>
+          <a href="{{ link.url }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </nav>
+{% endif %}
