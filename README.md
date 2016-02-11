@@ -68,4 +68,4 @@ Twitter Cards requires meta description. Facebook could infer it from the page i
 
 ## License
 
-[CC0](LICENSE.md)
+[CC0](LICENSE)
