@@ -14,7 +14,7 @@ layout: default
         <h2 class="post-title" itemprop="headline"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title | xml_escape }}</a></h2>
       </header>
       <div class="post-excerpt" itemprop="description">
-        {{ post.excerpt | strip_html }}<a class="read-more" href="{{url}}">…</a>
+        {{ post.excerpt | strip_html }}<a class="read-more" href="{{ post.url | prepend: site.baseurl }}">…</a>
       </div>
       <div class="post-footer">
         <ul class="x-separated-list x-separated-list-meta x-separated-list-small">
